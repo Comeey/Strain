@@ -8,7 +8,7 @@ Installation
 
 install :
 
-```https://github.com/Comeey/Strain && cd Strain && chmod +x install.sh && ./install.sh```
+```git clone https://github.com/Comeey/Strain && cd Strain && chmod +x install.sh && ./install.sh```
 
 ______________________________________________________________________________________________________________________
 
