@@ -81,24 +81,24 @@ Create_Info(database:get(Server_Tshake.."Token_Tshake"),database:get(Server_Tsha
 local RunTshake = io.open("Tshake", 'w')
 RunTshake:write([[
 #!/usr/bin/env bash
-cd $HOME/TshAkEx
+cd $HOME/Strain
 token="]]..database:get(Server_Tshake.."Token_Tshake")..[["
 rm -fr Tshake.lua
-wget "https://raw.githubusercontent.com/TEAMTshakeX/TshAkEx/master/Tshake.lua"
+wget "https://raw.githubusercontent.com/Comeey/Strain/master/Strain.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./Tshake.lua -p PROFILE --bot=$token
+./tg -s ./Strain.lua -p PROFILE --bot=$token
 done
 ]])
 RunTshake:close()
 local RunTs = io.open("ts", 'w')
 RunTs:write([[
 #!/usr/bin/env bash
-cd $HOME/TshAkEx
+cd $HOME/Strain
 while(true) do
 rm -fr ../.telegram-cli
-screen -S TshAkE -X kill
-screen -S TshAkE ./Tshake
+screen -S Strain -X kill
+screen -S Strain ./Tshake
 done
 ]])
 RunTs:close()
