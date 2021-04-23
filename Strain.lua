@@ -31,8 +31,7 @@ print("\27[34m"..[[
 >> Best Source in Telegram
 >> Features fast and powerful
                                                                                                                                                                          
->> CH > @DDDDiD
->> CH > @TshakeX 
+>> CH > @Straiin 
 ]].."\27[m")
 
 io.popen("mkdir -p Tshake_Files")
