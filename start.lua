@@ -83,7 +83,7 @@ RunTshake:write([[
 #!/usr/bin/env bash
 cd $HOME/Strain
 token="]]..database:get(Server_Tshake.."Token_Tshake")..[["
-rm -fr Tshake.lua
+rm -fr Strain.lua
 wget "https://raw.githubusercontent.com/Comeey/Strain/master/Strain.lua"
 while(true) do
 rm -fr ../.telegram-cli
@@ -98,7 +98,7 @@ cd $HOME/Strain
 while(true) do
 rm -fr ../.telegram-cli
 screen -S Strain -X kill
-screen -S Strain ./Tshake
+screen -S Strain ./Strain
 done
 ]])
 RunTs:close()
