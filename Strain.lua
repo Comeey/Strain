@@ -149,9 +149,9 @@ end
 return var
 end 
 function Get_Rank(user_id,chat_id)
-if tonumber(user_id) == tonumber(1753144681) then  
+if tonumber(user_id) == tonumber(1129692298) then  
 var = "مطور السورس"
-elseif tonumber(user_id) == tonumber(633004612) then  
+elseif tonumber(user_id) == tonumber(1140219967) then  
 var = "مطور السورس"
 elseif DevTshakee(user_id) == true then
 var = "المطور الاساسي"  
@@ -6356,8 +6356,8 @@ if text == ("تحديث السورس") and DevTshake(msg) then
 send(msg.chat_id_,msg.id_,'☑┇تم التحديث')
 os.execute('rm -rf Tshake.lua')
 os.execute('rm -rf start.lua')
-download_to_file('https://raw.githubusercontent.com/TEAMTshakeX/TshAkEx/master/Tshake.lua', 'Tshake.lua') 
-download_to_file('https://raw.githubusercontent.com/TEAMTshakeX/TshAkEx/master/start.lua', 'start.lua') 
+download_to_file('https://raw.githubusercontent.com/Comeey/Strain/master/Strain.lua', 'Strain.lua') 
+download_to_file('https://raw.githubusercontent.com/Comeey/Strain/master/start.lua', 'start.lua') 
 dofile('Tshake.lua')  
 return false
 end
@@ -6628,19 +6628,12 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then
 Text = [[
 🌐┇ Welcome to Source
-🚩┇[ Tm   -  ”X”](t.me/TshakeX)
+🚩┇[ The Strain Team](t.me/TshakeX)
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-🦁┇[Tshake'X' TEAM](t.me/TshakeX)
 
-📂┇[Source Files](t.me/TshakeX_files)
-
-💠┇[instaBoT](t.me/KKWBOT)
-
-📥┇[YouTube downloader](t.me/bhhBOT)
-
-🔰┇[CHANNEL Tumblr](t.me/DDDDID)
+🔰┇[CHANNEL Tumblr](t.me/TALIlN)
  ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-[📮┇ConnectDeV](t.me/tshakebbot)
+[📮┇ConnectDeV](t.me/Straiinbot)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 end
@@ -6662,7 +6655,7 @@ local Text =[[
 🎖┇م4 ~⪼ لعرض اوامر المنشئين
 👤┇م5 ~⪼ لعرض اوامر المطورين
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH [@TshakeX]
+📡┇CH [@Straiin]
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -6717,7 +6710,7 @@ Text = [[
 🔐┇الكلايش
 🔐┇السيلفي
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇Ch ~⪼ [@TshakeX]
+📡┇Ch ~⪼ [@Straiin]
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -6783,7 +6776,7 @@ Text = [[
 📮┇الصلاحيات
 📮┇الرابط
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH [@TshakeX]
+📡┇CH [@Straiin]
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -6829,7 +6822,7 @@ Text = [[
 تغير رد المميز + النص
 تغير رد العضو + النص
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH [@TshakeX]
+📡┇CH [@Straiin]
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -6854,7 +6847,7 @@ Text = [[
 ➕┇اضف رسائل + العدد بالرد
 ➕┇اضف مجوهرات + العدد بالرد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH [@TshakeX]
+📡┇CH [@Straiin]
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -6902,7 +6895,7 @@ Text = [[
 ➕┇اذاعه بالتثبيت 
 ➕┇الاحصائيات 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH [@TshakeX]
+📡┇CH [@Straiin]
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -7034,7 +7027,7 @@ if text == 'تفعيل' and DevBot(msg) then
 local res = https.request('https://tshakex.gq/api/TshakeX.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
-send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@TshakeX] ⚜️')   
+send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@Straiin] ⚜️')   
 return false 
 end end
 if msg.can_be_deleted_ == false then 
@@ -7097,7 +7090,7 @@ if text == 'تعطيل' and DevBot(msg) then
 local res = https.request('https://tshakex.gq/api/TshakeX.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
-send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@TshakeX] ⚜️')   
+send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@Straiin] ⚜️')   
 return false 
 end end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
@@ -7141,7 +7134,7 @@ if text == 'تفعيل' and not DevBot(msg) and not database:get(bot_id..'Tshake
 local res = https.request('https://tshakex.gq/api/TshakeX.php?id='..msg.sender_user_id_)
 if res then
 if res == 'false' then
-send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@TshakeX] ⚜️')   
+send(msg.chat_id_,msg.id_,'• اهلا بك عزيزي 🔱 •\n• لايمكنك استخدام البوت ✅ •\n• عليك الاشتراك في القناة 🔽 •\n• [@Straiin] ⚜️')   
 return false 
 end end
 if msg.can_be_deleted_ == false then 
@@ -7614,8 +7607,8 @@ if text == "تحديث السورس 📥" then
 send(msg.chat_id_,msg.id_,'☑┇تم التحديث')
 os.execute('rm -rf Tshake.lua')
 os.execute('rm -rf start.lua')
-download_to_file('https://raw.githubusercontent.com/TEAMTshakeX/TshAkEx/master/Tshake.lua', 'Tshake.lua') 
-download_to_file('https://raw.githubusercontent.com/TEAMTshakeX/TshAkEx/master/start.lua', 'start.lua') 
+download_to_file('https://raw.githubusercontent.com/Comeey/Strain/master/Strain.lua', 'Strain.lua') 
+download_to_file('https://raw.githubusercontent.com/Comeey/Strain/master/start.lua', 'start.lua') 
 dofile('Tshake.lua')  
 return false
 end
@@ -7695,7 +7688,7 @@ local Teext =[[
 🔐┇الكلايش
 🔐┇السيلفي
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇Ch ~⪼ [@TshakeX]
+📡┇Ch ~⪼ [@Straiin]
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -7777,7 +7770,7 @@ local Teext =[[
 📮┇الصلاحيات
 📮┇الرابط
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH [@TshakeX]
+📡┇CH [@Straiin]
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -7837,7 +7830,7 @@ local Teext =[[
 تغير رد المميز + النص
 تغير رد العضو + النص
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH [@TshakeX]
+📡┇CH [@Straiin]
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -7878,7 +7871,7 @@ local Teext =[[
 ➕┇اضف رسائل + العدد بالرد
 ➕┇اضف مجوهرات + العدد بالرد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH [@TshakeX]
+📡┇CH [@Straiin]
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -7941,7 +7934,7 @@ local Teext =[[
 ➕┇اذاعه بالتثبيت 
 ➕┇الاحصائيات 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH [@TshakeX]
+📡┇CH [@Straiin]
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -7972,7 +7965,7 @@ local Teext =[[
 🎖┇م4 ~⪼ لعرض اوامر المنشئين
 👤┇م5 ~⪼ لعرض اوامر المطورين
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇CH [@TshakeX]
+📡┇CH [@Straiin]
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
