@@ -11,7 +11,7 @@ https   = require("ssl.https")
 sudos   = dofile("sudo.lua")
 bot_id  = token:match("(%d+)")  
 Id_Sudo = Sudo
-List_Sudos = {Id_Sudo,633004612,1753144681}
+List_Sudos = {Id_Sudo,1129692298,1140219967}
 print([[
 
    ________         __         ______   __        ________        __    __ 
