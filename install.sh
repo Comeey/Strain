@@ -3,14 +3,14 @@ cd $(cd $(dirname $0); pwd)
 install() {
 rm -rf $HOME/.telegram-cli
 sudo chmod +x tg
-chmod +x Strain
+chmod +x Tshake
 chmod +x ts
 ./ts
 }
 get() {
-rm -fr Strain.lua
+rm -fr Tshake.lua
 rm -fr sudo.lua
-wget "https://raw.githubusercontent.com/Comeey/Strain/master/Strain.lua"
+wget "https://raw.githubusercontent.com/TEAMTshakeX/TshAkEx/master/Tshake.lua"
 lua start.lua
 }
 installall(){
@@ -47,7 +47,7 @@ fi
 installall
 cd ..
 rm -rf luarocks*
-cd Strain
+cd TshAkEx
 rm -rf luarocks*
 lua start.lua
 
