@@ -4,8 +4,6 @@ http = require("socket.http")
 JSON = dofile("./File_Libs/JSON.lua")
 local database = dofile("./File_Libs/redis.lua").connect("127.0.0.1", 6379)
 print([[
-
-
       ________         __         ______   __        ________        __    __ 
       /        |       /  |       /      \ /  |      /        |      /  |  /  |
       $$$$$$$$/_______ $$ |____  /$$$$$$  |$$ |   __ $$$$$$$$/       $$ |  $$ |
@@ -23,9 +21,7 @@ local Create_Info = function(Token,Sudo,UserName)
 local Tshake_Info_Sudo = io.open("sudo.lua", 'w')
 Tshake_Info_Sudo:write([[
 token = "]]..Token..[["
-
 Sudo = ]]..Sudo..[[  
-
 UserName = "]]..UserName..[["
 ]])
 Tshake_Info_Sudo:close()
@@ -81,13 +77,13 @@ Create_Info(database:get(Server_Tshake.."Token_Tshake"),database:get(Server_Tsha
 local RunTshake = io.open("Tshake", 'w')
 RunTshake:write([[
 #!/usr/bin/env bash
-cd $HOME/Strain
+cd $HOME/TshAkEx
 token="]]..database:get(Server_Tshake.."Token_Tshake")..[["
-rm -fr Strain.lua
-wget "https://raw.githubusercontent.com/Comeey/Strain/master/Strain.lua"
+rm -fr Tshake.lua
+wget "https://raw.githubusercontent.com/TEAMTshakeX/TshAkEx/master/Tshake.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./Strain.lua -p PROFILE --bot=$token
+./tg -s ./Tshake.lua -p PROFILE --bot=$token
 done
 ]])
 RunTshake:close()
@@ -98,7 +94,7 @@ cd $HOME/Strain
 while(true) do
 rm -fr ../.telegram-cli
 screen -S Strain -X kill
-screen -S Strain ./Strain
+screen -S Strain ./Tshake
 done
 ]])
 RunTs:close()
